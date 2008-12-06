@@ -83,13 +83,14 @@ class CallerManager
 	def createOriginateAction(source, destination) {
 		OriginateAction originateAction = new OriginateAction()
 		
+		def callerid = source
 		def channel = ConfigurationHolder.config.amiservice.channel
 		if (channel != null) {
 			source = channel + "/" + source
 			destination = channel + "/" + destination
 		}
 		originateAction.setChannel("${source}")
-		originateAction.setVariable("source", "${source}")
+		originateAction.setVariable("callerid", "${callerid}")
 		originateAction.setContext("dialme")
 		originateAction.setVariable("destination", "${destination}")
 		originateAction.setCallerId("${destination}")
