@@ -1,0 +1,56 @@
+<plugin name='jsecurity' version='0.2.1'>
+  <author>Peter Ledbrook</author>
+  <authorEmail>peter@cacoethes.co.uk</authorEmail>
+  <title>Security support via the JSecurity framework.</title>
+  <description>Adds a security layer to your Grails application, allowing you to
+protect pages based on a user's roles and/or permissions.
+</description>
+  <documentation>http://grails.codehaus.org/JSecurity+Plugin</documentation>
+  <resources>
+    <resource>JsecurityFilters</resource>
+    <resource>JsecTagLib</resource>
+    <resource>JsecAuthBase</resource>
+    <resource>UrlMappings</resource>
+    <resource>spring.resources</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>BootStrap</resource>
+    <resource>MyControllerController</resource>
+    <resource>UserController</resource>
+    <resource>AdminController</resource>
+    <resource>UserService</resource>
+    <resource>JsecDbRealm</resource>
+    <resource>UrlMappings</resource>
+    <resource>spring.resources</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>BootStrap</resource>
+    <resource>BookController</resource>
+    <resource>ItemController</resource>
+    <resource>Book</resource>
+    <resource>Item</resource>
+    <resource>UrlMappings</resource>
+    <resource>spring.resources</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>BootStrap</resource>
+    <resource>SecurityFilters</resource>
+    <resource>ItemSecuredController</resource>
+    <resource>BookController</resource>
+    <resource>TestController</resource>
+    <resource>ItemController</resource>
+    <resource>Book</resource>
+    <resource>Item</resource>
+    <resource>UrlMappings</resource>
+    <resource>spring.resources</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>BootStrap</resource>
+    <resource>SecurityFilters</resource>
+    <resource>BookController</resource>
+    <resource>ItemController</resource>
+    <resource>Book</resource>
+    <resource>Item</resource>
+    <resource>DummyRealm</resource>
+  </resources>
+</plugin>
