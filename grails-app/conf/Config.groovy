@@ -15,9 +15,7 @@ amiservice {
 	ami_user = env['CTC_AMI_USER']
 	ami_password =  env['CTC_AMI_PASSWORD']
 	astrisk_server = env['CTC_ASTERISK_SERVER']
-	/*ami_user = "manager"
-	ami_password = "pa55w0rd"
-	astrisk_server = "localhost"*/
+	channel = env['CTC_CHANNEL']
 }
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
