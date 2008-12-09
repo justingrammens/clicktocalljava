@@ -28,6 +28,8 @@ class CallerManager
 	ManagerConnection managerConnection
 	static CallerManager myself;
 	
+	AsteriskServerImpl impl
+	
 	def loggedIn
 	def availChars = []
 	static HashMap queue 
@@ -54,14 +56,14 @@ class CallerManager
 		def astrisk_server = ConfigurationHolder.config.amiservice.astrisk_server
 
 		ManagerConnectionFactory factory = new ManagerConnectionFactory("${astrisk_server}", "${user}", "${password}")		
-		managerConnection = factory.createManagerConnection();	
+		managerConnection = factory.createManagerConnection()
+		
+		impl = new AsteriskServerImpl(managerConnection)
 	}
 
 	def PhoneCall placeCall(source, destination, user) 
 	{
 		def action = createOriginateAction(source, destination)
-		
-		AsteriskServerImpl impl = new AsteriskServerImpl(managerConnection)
 		
 		ClickToCallCallback cb = new ClickToCallCallback()
 		

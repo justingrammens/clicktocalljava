@@ -31,7 +31,6 @@ class AsteriskManagerService {
 		def call = PhoneCall.findByGuid(guid)
 		if (call) {
 			def result = [guid: call.guid, status: call.status, description: call.description, source: call.source, destination: call.destination, user: call.user]
-			println "CALL USER!: ${call.user}"
 			return result
 		} else {
 			return [status: "No guid with id of : ${guid} being processed."]
