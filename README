@@ -1,3 +1,5 @@
 This is a click to call application using the Asterisk-Java and Grails framework.
 
 You will need to make sure you have Asterisk installed and running on he default port for this application to work properly.
+
+This contains all of the jar files that you will need.
