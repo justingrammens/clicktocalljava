@@ -16,10 +16,10 @@
 		</p>
 			<g:form action="create">
 			<p>
-				Your phone number - Replace the phone number with yours. <input type="text" name="source" value="6127222795"/>
+				Your phone number - Replace the phone number with yours. <input type="text" name="source" value="9999999999"/>
 			</p>
 			<p>
-				The phone number you wish to connect to  - Replace the phone number with yours. <input type="text" name="destination" value="6127222795"/>
+				The phone number you wish to connect to  - Replace the phone number with yours. <input type="text" name="destination" value="9999999999"/>
 			</p>
 			<p>
 				The API Key for this service call.  <input type="text" name="apiKey" value="TESTKEY" />
